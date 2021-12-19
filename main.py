@@ -2,7 +2,7 @@ import speedtest
 import time
 import datetime
 
-CSV_PATH = "./benchmark.csv"
+CSV_PATH = "~/data/benchmark.csv"
 
 def get_line(test: speedtest.Speedtest):
   return ",".join(map(str, [datetime.datetime.now(), test.download(), test.upload()])) + "\n"
